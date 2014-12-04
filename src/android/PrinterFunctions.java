@@ -24,7 +24,7 @@ public class PrinterFunctions
         StarIOPort port = null;
         StarPrinterStatus status = null;
         try {
-            port = StarIOPort.getPort(portName, portSettings, 10000, context);
+            port = StarIOPort.getPort(portName, portSettings, 10000);
 
             try {
                 Thread.sleep(500);
@@ -91,7 +91,7 @@ public class PrinterFunctions
                 using StarIOPort3.1.jar (support USB Port)
                 Android OS Version: upper 2.2
             */
-            port = StarIOPort.getPort(portName, portSettings, 10000, context);
+            port = StarIOPort.getPort(portName, portSettings, 10000);
             /*
                 using StarIOPort.jar
                 Android OS Version: under 2.1
