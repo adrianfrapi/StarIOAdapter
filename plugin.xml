@@ -29,7 +29,7 @@
 
             <source-file src="src/android/StarIOAdapter.java" target-dir="src/com/uforge/plugins/" />
             <source-file src="src/android/PrinterFunctions.java" target-dir="src/com/uforge/plugins/" />
-
+            <source-file src="lib/stario.jar" target-dir="libs" />
         </platform>
 
         <!-- ios -->
