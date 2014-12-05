@@ -11,8 +11,6 @@ import com.starmicronics.stario.StarIOPort;
 import com.starmicronics.stario.StarIOPortException;
 import com.starmicronics.stario.StarPrinterStatus;
 
-private static final String TAG = "PrinterFunctions";
-
 public class PrinterFunctions
 {
     /**
@@ -57,7 +55,7 @@ public class PrinterFunctions
      */
     public static String getFirstPrinter(String portNameSearch) {
 
-        Log.e(TAG, "getFirstPrinter portNameSearch=" + portNameSearch);
+        Log.e("PrinterFunctions", "getFirstPrinter portNameSearch=" + portNameSearch);
         String portName = "";
         List<PortInfo> portList;
         try {
@@ -65,7 +63,7 @@ public class PrinterFunctions
 
             for (PortInfo portInfo : portList) {
                 portName = portInfo.getPortName();
-                Log.e(TAG, "printername=" + portName);
+                Log.e("PrinterFunctions", "printername=" + portName);
                 break;
             }
         } catch (StarIOPortException e) {
