@@ -63,7 +63,7 @@ public class PrinterFunctions
 
             for (PortInfo portInfo : portList) {
                 portName = portInfo.getPortName();
-                Log.v(TAG, "printername=" + portName);
+                Log.e(TAG, "printername=" + portName);
                 break;
             }
         } catch (StarIOPortException e) {
