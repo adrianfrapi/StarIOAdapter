@@ -56,6 +56,8 @@ public class PrinterFunctions
      * @return
      */
     public static String getFirstPrinter(String portNameSearch) {
+
+        Log.e(TAG, "getFirstPrinter portNameSearch=" + portNameSearch);
         String portName = "";
         List<PortInfo> portList;
         try {
