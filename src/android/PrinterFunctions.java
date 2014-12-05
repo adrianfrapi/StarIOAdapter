@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.starmicronics.stario.PortInfo;
 import com.starmicronics.stario.StarIOPort;
 import com.starmicronics.stario.StarIOPortException;
 import com.starmicronics.stario.StarPrinterStatus;
 
+private static final String TAG = "PrinterFunctions";
 
 public class PrinterFunctions
 {
@@ -61,6 +63,7 @@ public class PrinterFunctions
 
             for (PortInfo portInfo : portList) {
                 portName = portInfo.getPortName();
+                Log.v(TAG, "printername=" + portName);
                 break;
             }
         } catch (StarIOPortException e) {
